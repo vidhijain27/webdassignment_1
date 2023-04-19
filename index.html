@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+    <!-- Main heading -->
+    <h1 class="heading">WEBD FORM</h1>
+
+    <h3>Note: All the fields in the form are mandatory</h3>
+    
+
+    <!-- Adding a link -->
+    <h4> Making your linkedin profile is compulsory.</h4>
+    <a href = "https://linkedin.com" target = "_blank">For linkedin profile, click here</a><br> <br>
+
+
+    <!-- Creating a form -->
+    <form action="backend.php">
+        <div>
+             <label for="Name">Name:</label>
+             <input type="text" name = "myname" id = "Name"  class = "intcont"> 
+        </div>
+        <br>
+        <div>
+             <label for="Email ID">Email ID:</label>
+             <input type="email" name = "myemail" id = "Email ID" class = "intcont">
+        </div>
+        <br>
+        <div>
+            <label for="num">Phone No:</label>
+            <input type="number" name = "myphoneno" id = "num" class = "intcont">
+            </div>
+            <br>
+        <div>
+            <label for="DOB">Date of birth:</label>
+            <input type="date" name = "myDOB" id = "DOB" class = "intcont">
+            </div>
+            <br>
+        <div>
+            <label for="Gender">Gender: </label> <br>
+            Male: <input type="radio" name = "mygender" id = "Gender"> Female: <input type="radio" name = "mygender" id = "Gender" >
+            </div>
+            <br>
+            <div>
+                <label for="Skills">Skills: </label>
+                <!-- Ordered list -->
+                <ol>
+                <li>Backend <input type="checkbox" name = "myskills" id = "Skills" ></li>
+                <li>Frontend <input type="checkbox" name = "myskills" id = "Skills" > </li>
+                <li>Full Stack <input type="checkbox" name = "myskills" id = "Skills" > </li>
+                <li>Web Development <input type="checkbox" name = "myskills" id = "Skills" > </li>
+                <li>Block Chain <input type="checkbox" name = "myskills" id = "Skills" > </li>
+                </ol>
+                </div>
+                <br>
+                <div>
+                    <!-- Drop down list -->
+                    <label for = "State">State:</label>
+                    <select name = "mystate" id = "State" class = "intcont">
+                    <option value = "Options">Select</option>
+                    <option value = "up">Uttar Pradhesh</option>
+                    <option value = "hp">Himachal Pradhesh</option>
+                    <option value = "uk">Uttarakhand</option>
+                    <option value = "Delhi" >Delhi</option>
+                    <option value = "pun">Punjab</option>
+                    <option value = "har">Haryana</option>
+
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label for ="about">Write about yourself:</label>
+                    <textarea id = "about" name = "aboutme" rows = "4" cols = "50" class = "intcont">
+                    </textarea>
+
+                </div>
+                <br>
+                <div>
+                    <table>
+                        <thead>
+                            <th>Qualifications</th>
+                            <th>CGPA
+                            <th>Board</th>
+                        </thead>
+
+                        <tbody>
+                            <td><input type = "text" class="intcont tbl"> </td>
+                            <td><input type="number" class="intcont tbl"></td>
+                            <td><input type = "text" class="intcont tbl"> </td>
+                        </tbody>
+
+                        <tbody>
+                            <td><input type = "text" class="intcont tbl"></td>
+                            <td><input type="number" class="intcont tbl"></td>
+                            <td><input type = "text" class="intcont tbl"></td>
+                        </tbody>
+
+                        <tbody>
+                            <td><input type = "text" class="intcont tbl"></td>
+                            <td><input type="number" class="intcont tbl"></td>
+                            <td><input type = "text" class="intcont tbl"></td>
+                        </tbody>
+                    </table>
+                </div>
+                <br>
+                <div>
+                    <label for = "submit"></label>
+                    <input type = "submit" name = "submit" id = "submit" class="button">
+                
+                    <label for = "reset"></label>
+                    <input type = "reset" name = "reset" id = "reset" class="button">
+                </div>
+
+
+
+    </form>
+
+</body>
+</html>
